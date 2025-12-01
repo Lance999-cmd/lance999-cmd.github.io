@@ -18,6 +18,12 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+        
+          { type: "enemy", x: 1300, y: groundY - 50 },
+      
+          { type: "reward", x: 2000, y: groundY - 60 },
+      
+          { type: "marker", x: 2500, y: groundY - 100 },
         ],
       },
       {
@@ -28,9 +34,30 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+        
+          { type: "enemy", x: 1600, y: groundY - 50 },
+      
+          { type: "reward", x: 2300, y: groundY - 60 },
+      
+          { type: "marker", x: 2800, y: groundY - 100 },
         ],
       },
-    ];
+    {
+      name: "Robot Rebellion",
+      number: 3,
+      speed: -5,
+      gameItems: [
+        { type: "sawblade", x: 500, y: groundY },
+        { type: "sawblade", x: 900, y: groundY },
+        { type: "sawblade", x: 1300, y: groundY },
+        { type: "enemy", x: 1700, y: groundY - 50 },
+        { type: "enemy", x: 2000, y: groundY - 50 },
+        { type: "reward", x: 2400, y: groundY - 60 },
+        { type: "marker", x: 3000, y: groundY - 100 },
+       ],
+    }
+    
+  ];
     window.opspark.levelData = levelData;
   };
 };
